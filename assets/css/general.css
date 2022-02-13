@@ -9,11 +9,11 @@
   --shade-1: #cf711f;
   --shade-2: #45260a;
   /* Grays */
-  --gray-1: #888;
+  --gray-1: #888888;
   --gray-2: #767676;
   --gray-3: #6f6f6f;
-  --gray-4: #555;
-  --gray-5: #333;
+  --gray-4: #555555;
+  --gray-5: #333333;
 }
 /*
 --- 01 TYPOGRAPHY SYSTEM
@@ -32,6 +32,7 @@ Default: 1
 Small: 1.05
 Medium: 1.2
 Paragraph default: 1.6
+Large: 1.8
 
 - Letter spacing
 -0.5px
@@ -259,6 +260,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-item {
