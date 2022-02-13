@@ -1,3 +1,20 @@
+:root {
+  /* Primary */
+  --color-1: #e67e22;
+  --color-2: #fdf2e9;
+  --color-3: #fae5d3;
+  --color-4: #eb984e;
+  --color-5: #ffffff;
+  /* Shades */
+  --shade-1: #cf711f;
+  --shade-2: #45260a;
+  /* Grays */
+  --gray-1: #888;
+  --gray-2: #767676;
+  --gray-3: #6f6f6f;
+  --gray-4: #555;
+  --gray-5: #333;
+}
 /*
 --- 01 TYPOGRAPHY SYSTEM
 
@@ -73,7 +90,7 @@ body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #555;
+  color: var(--gray-4);
 }
 
 /**************************/
@@ -127,7 +144,7 @@ body {
 .heading-secondary,
 .heading-tertiary {
   font-weight: 700;
-  color: #333;
+  color: var(--gray-5);
   /* color: #45260a; */
   /* color: #343a40; */
   letter-spacing: -0.5px;
@@ -155,7 +172,7 @@ body {
   display: block;
   font-size: 1.6rem;
   font-weight: 500;
-  color: #cf711f;
+  color: var(--shade-1);
   text-transform: uppercase;
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
@@ -184,47 +201,47 @@ body {
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: #e67e22;
-  color: #fff;
+  background-color: var(--color-1);
+  color: var(--color-5);
 }
 
 .btn--full:hover,
 .btn--full:active {
-  background-color: #cf711f;
+  background-color: var(--shade-1);
 }
 
 .btn--outline:link,
 .btn--outline:visited {
-  background-color: #fff;
-  color: #555;
+  background-color: var(--color-5);
+  color: var(--gray-4);
 }
 
 .btn--outline:hover,
 .btn--outline:active {
-  background-color: #fdf2e9;
+  background-color: var(--color-2);
 
-  /* border: 3px solid #fff; */
+  /* border: 3px solid var(--color-5); */
 
   /* Trick to add border inside */
-  box-shadow: inset 0 0 0 3px #fff;
+  box-shadow: inset 0 0 0 3px var(--color-5);
 }
 
 .btn--form {
-  background-color: #45260a;
-  color: #fdf2e9;
+  background-color: var(--shade-2);
+  color: var(--color-2);
   align-self: end;
   padding: 1.2rem;
 }
 
 .btn--form:hover {
-  background-color: #fff;
-  color: #555;
+  background-color: var(--color-5);
+  color: var(--gray-4);
 }
 
 .link:link,
 .link:visited {
   display: inline-block;
-  color: #e67e22;
+  color: var(--color-1);
   text-decoration: none;
   border-bottom: 1px solid currentColor;
   padding-bottom: 2px;
@@ -233,7 +250,7 @@ body {
 
 .link:hover,
 .link:active {
-  color: #cf711f;
+  color: var(--shade-1);
   border-bottom: 1px solid transparent;
 }
 
@@ -254,12 +271,12 @@ body {
 .list-icon {
   width: 3rem;
   height: 3rem;
-  color: #e67e22;
+  color: var(--color-1);
 }
 
 *:focus {
   outline: none;
-  /* outline: 4px dotted #e67e22;
+  /* outline: 4px dotted var(--color-1);
   outline-offset: 8px; */
   box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
