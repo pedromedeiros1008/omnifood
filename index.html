@@ -8,10 +8,10 @@
       content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/img/favicon.png">
-    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-    <link rel="manifest" href="manifest.webmanifest">
-  
+    <link rel="shortcut icon" href="assets/img/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
     <!-- ========GOOGLE FONTS======== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,7 +39,7 @@
       defer
       src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
-
+    
     <!-- ========MAIN JS======== -->
     <script defer src="assets/js/script.js"></script>
 
@@ -121,11 +121,15 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <img
-              src="assets/img/hero.png"
+            <picture>
+              <source srcset="assets/img/hero.webp" type="image/webp">
+              <source srcset="assets/img/hero-min.png" type="image/png">
+              <img
+              src="assets/img/hero-min.png"
               class="hero-img"
               alt="Woman enjoying food, meals in storage container, and food bwols on a table"
             />
+            </picture>
           </div>
         </div>
       </section>
